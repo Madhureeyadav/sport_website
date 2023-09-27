@@ -4,20 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
+    <script src="https://kit.fontawesome.com/b46bd9152f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="gallery1.css">
 </head>
 <body>
- 
-    <div class="gal1">
-<h1>OUR GALLERY</h1>
-<nav> 
+ <div>
+ <nav> 
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <img class="mg" src="./image/logo1.jpg">
 <ul>
     <li><a href="# ">Football</a></li>
     <li><a href=" #">Cricket</a></li>
     <li><a href=" #">Badminton</a></li>
     <li><a href=" ">contact</a></li>
+    
 </ul>
 </nav> 
+</div>
+<div class="g1">
+    
+
+<h1>Gallery</h1>
 <div class="gal2">
   <div class="gal2-cover">
    <img src="./image/g1.jpg ">
@@ -38,7 +49,7 @@
 <button class="learn"><a href="#"> Learn More</a></button>
 </div>
 <div>
-<div>
+<div class="std2">
     <div class="std1"><h2> Cricket Stdium Images</h2></div>
     
        <div class="col col-cover"> <img src="./image/cricketstdium1.jpg "></div>
@@ -54,16 +65,75 @@
 
 </div>
 </div>
-<section id="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or inquiries, please feel free to contact us:</p>
-        <address>
-            Email: <a href="info@sportsservices.com">info@sportsservices.com</a><br>
-            Phone: <a href="tel:+1234567890">123-456-7890</a>
-        </address>
-    </section>
-    <footer>
-        <p>&copy; 2023 Sports Services</p>
-    </footer>
+</div>
+<footer>
+    <div class="contact" >
+        <div class="contact2">
+    <div class="contact1" >
+
+<h1>Contact</h1>
+<li>bcc new</li>
+<li>012233455</li>
+<li>
+    bcc@gmail.com
+</li>
+    </div>
+    <div  class="contact1">
+   
+<h1>Matches</h1>
+
+<li>Domentic</li>
+<li>international</li>
+
+    </div >
+    <div  class="contact1">
+        <h1>Video</h1>
+      
+    <li>latest</li>
+<li>highlight</li>
+<li>features and views</li>
+<li>press confenerce</li>
+
+    </div>
+    </div>
+    <div class="contact2">
+    <div  class="contact1">
+<h1>News</h1>
+
+<li>latest</li>
+<li>press releases</li>
+<li>features and interviews</li>
+<li>Bcc News</li>
+
+    </div>
+    <div  class="contact1">
+<h1>More</h1>
+
+<li>IPL</li>
+<li>WPL</li>
+<li>Gallery</li>
+<li>Venues</li>
+<li>jobs</li>
+
+    </div>
+    <div  class="contact1">
+<h1>About</h1>
+
+<li>Anti Corruption</li>
+<li>Anti Recium</li>
+<li>Anti Doping</li>
+<li>Tue Application Form</li>
+<li>Playing Condition</li>
+<li>Annual Report</li>
+<li>
+    Mccs Law of Outdoor
+</li>
+
+    </div>
+    </div>
+    </div>
+</footer>
+
+
 </body>
 </html>

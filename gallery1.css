@@ -1,7 +1,75 @@
 *{
-    padding:0;
-    margin:0;
+  padding:0;
+  margin:0;
 
+
+
+}
+
+
+nav{
+  height: 80px;
+  background:#34495e;
+  position: fixed;
+  width: 100vw;
+}
+nav .mg{
+  width:11vw;
+  position:absolute;
+  top:2px;
+  left:12%;
+  height:8vh;
+
+
+}
+nav ul{
+  float:right;
+  margin-right:25px;
+}
+nav ul li{
+  display:inline-block;
+  line-height:80px;
+  margin:0 15px;
+}
+nav ul li a{
+  position:relative;
+  color:white;
+  font-size:18px;
+  padding:5px 0;
+  text-transform:uppercase;
+}
+nav ul li a:before{
+  position:absolute;
+  content:'';
+  left:0;
+  bottom:0;
+  height:3px;
+  width:100%;
+  background:white;
+  transform:ScaleX(0);
+  transform-origin:right;
+  transition: transform .4s linear;
+}
+nav ul li a:hover:before
+{
+  transform:scaleX(1);
+  transform-origin:left;
+}
+label #btn,label #cancel{
+  color:white;
+  font-size:right;
+  float:right;
+  line-height:80px;
+  margin-right:40px;
+  cursor:pointer;
+  display:none;
+}
+#check{
+  display:none;
+}
+.g1 h1{
+  text-align: center;
+  padding-top:100px;
 }
 .gal1{
 
@@ -97,9 +165,21 @@ img{
 h2{
 text-align: center;
 }
+.std2{
+  display:column;
+  width:100%;
+}
 .std1 {
   /*margin: 1em 0;*/
-  text-align: center;
+  
+  display:flex;
+  width:100%
+}
+.std1 .col {
+  width:100%;
+  display:flex;
+  flex-direction:column;
+
 }
 section {
   margin-top :10px;
@@ -112,22 +192,214 @@ section {
 section h2 {
   color: #333;
 }
-nav ul{
-  list-style-type: none;
-  padding:0;
- 
+.contact{
+  display:flex; 
+ justify-content: space-around;
+ flex-direction: row; 
+   
+    background-color:black; 
+    color:white;
+    list-style:none;
+    padding:10px;
+}
+
+.contact2{
+   display:flex;
+  gap:2em;
+
+
+
+}
+@media (max-width:1118px){
+  nav img{
+      left:8%;
+  }
+  nav .mg{
+    width:11vw;
+    position:absolute;
+    top:2px;
+    left:12%;
+    height:10vh;
+  
+  
+  }
+  nav .mg{
+    width: 11vw;
+  position: absolute;
+  top: 2px;
+  left: 12%;
+  height: 8vh;
+  }
  
 }
-nav li{
-      display:inline;
-      margin-top:20px;
-      justify-content: space-between;
-     
-     
+@media (max-width:944px){
+  nav .mg{
+      left:8%;
+      top:7%;
+      width:15vw;
+      height:8vh
   }
-  nav a{
-     text-decoration: none;
-     color:black;
-     font-weight: bold;
+  nav ul li a{
+      font-size:15px;
+  }
+  .gal2 img {
+    /* display:flex; */
+
+    width: 60vw;
+    height: 30vh;
+
+   object-fit:cover;
     
   }
+  .std2{
+    display:column;
+    width:100%;
+  }
+  .std1 {
+    /*margin: 1em 0;*/
+    
+    display:flex;
+    width:100%
+  }
+  .std1 .col {
+    width:100%;
+    display:flex;
+    flex-direction:column;
+  
+  }
+}
+@media (max-width:860px){
+  label #btn{
+  display:block;
+  }
+  ul{
+      position:fixed;
+      width:100%;
+      height:100vh;
+      background:#34495e;
+      top:80px;
+      left:-100%;
+      text-align:center;
+      transition:all .5s;
+  }
+  nav ul li{
+      display:block;margin:50px 0;
+      line-height:30px;
+  }
+  nav ul li a{
+font-size:15px;
+  }
+  #check:checked ~ ul{
+      left:0;
+  }
+  #check:checked ~label #btn{
+      display:none;
+  }
+  #check:checked ~label #cancel{
+      display:block;
+  }
+  
+  .gal2 img {
+    /* display:flex; */
+
+    width: 60vw;
+    height: 20vh;
+
+   object-fit:cover;
+    
+  }
+  
+
+
+.gal2-cover  {
+    width: 100%;
+    height: auto;
+    
+    transition: all 1s;
+    
+}
+/* img{
+  
+  overflow:hidden;
+  margin:auto auto;
+  flex-direction:column;
+  padding:10px;
+  text-align:center;
+}
+.std2{
+  display:column;
+  width:100%;
+}
+.std1 {
+  /*margin: 1em 0;
+  text-align: center;
+  display:column;
+  width:100%;
+} */
+.std2{
+  display:column;
+  width:100%;
+ 
+  text-align:center;
+}
+.std1 {
+  /*margin: 1em 0;*/
+
+  display:flex;
+  width:100%
+}
+.std1 .col {
+  width:100%;
+  display:column;
+  
+
+}
+.contact{
+      
+  flex-direction:column;
+
+  justify-content: space-between;
+background-color:black; 
+color:white;
+list-style:none;
+}
+.contact2{
+  display:flex;
+ 
+ 
+ gap:2em;
+}
+.contact1{
+display:column;
+width:33%;
+}
+}
+
+}
+@media (min-width:740px)
+{
+  gal2 {
+    margin: 1em;
+    padding: 3rem;
+    /* flex: auto; */
+    text-align: center;
+    background-color: lemonchiffon;
+    object-fit: cover;
+  }
+  .std2{
+    display:column;
+    width:100%;
+  }
+  .std1 {
+    /*margin: 1em 0;*/
+    
+    display:flex;
+    width:100%
+  }
+  .std1 .col {
+    width:100%;
+    display:flex;
+    flex-direction:column;
+  
+  }
+}
